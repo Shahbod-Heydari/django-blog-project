@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    title of posts
+{% endblock %}
+
+{% block header_refrences %}
+    <link rel="stylesheet" href="{% static 'blog/post-detail.css' %}">
+{% endblock %}
+
+{% block content %}
+    <section id="summary">
+        <h2>post title</h2>
+        <article>
+            <img src="{% static 'blog/images/django.jpg' %}" alt="post image alt">
+            <address>By Shahbod</address>
+            <div>
+                last updated on
+                <time>September 19th</time>
+            </div>
+        </article>
+    </section>
+
+    <main>
+        <h3>description, random text</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda aut dolor dolorem dolores, ea facere fuga fugit inventore natus provident quaerat quibusdam quod totam! Aliquam culpa delectus ex officia quaerat quidem quo totam, voluptatibus? Adipisci aperiam corporis dicta dignissimos distinctio dolor ea eius enim esse eum ex, facere id in magni maxime nostrum odit officia optio perferendis quas qui quia quod reiciendis repellendus sed suscipit tempore voluptatum. At, eos, harum? Accusantium cupiditate doloribus ducimus earum et eum eveniet facilis illum ipsum maiores minus molestias necessitatibus neque nihil numquam odio, officia pariatur porro qui quisquam quos tempore veritatis vitae. Fugiat, quod?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci fugit modi molestiae quasi. Error nihil quasi ullam voluptas! Aliquam aspernatur assumenda at beatae consequuntur culpa cum dolorem eaque eligendi esse eum fuga fugiat id incidunt iste iure magnam minima molestiae nam nesciunt nisi numquam officiis praesentium recusandae rem soluta tempora, tenetur vel, vitae voluptas. Ad amet autem fuga hic minima nemo repellat. Adipisci, corporis dignissimos dolore esse est facilis laudantium magnam nihil possimus quae totam, ullam, ut vel veritatis vero. Aspernatur debitis deserunt eaque eius enim expedita incidunt ipsa laborum modi non nulla officiis, perspiciatis praesentium qui quod temporibus ut.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nemo perspiciatis tenetur vitae. Debitis impedit maiores officiis placeat voluptatibus. Maiores minus nihil quae quam voluptate. Aperiam culpa deserunt dolore est exercitationem fugiat iusto laborum magnam minima mollitia non numquam officiis quam quibusdam, sunt ut velit? Cumque dolorem dolores reprehenderit ullam veniam? Amet aut culpa debitis nam officiis quia. A ad deleniti dolore eius explicabo, harum possimus quasi sed similique ullam? Animi aut corporis culpa, dolorum ea earum esse expedita fuga illo impedit inventore itaque libero nisi omnis quaerat quam reiciendis, repellat saepe sit soluta, sunt suscipit ullam vitae! Asperiores dolorum error inventore laboriosam nesciunt officiis, totam. Aperiam architecto excepturi hic ipsum maxime molestias nobis nostrum quisquam rem voluptatibus. Dignissimos earum exercitationem illum iste nam pariatur sapiente tempore! Aliquam amet aperiam asperiores beatae blanditiis cumque deleniti dicta distinctio dolore doloribus ducimus eaque eligendi enim fugiat harum incidunt iusto laborum laudantium libero maiores, maxime molestias nulla odit officiis optio perferendis placeat praesentium quam ratione repellat saepe sint tempore ut veniam, veritatis vitae voluptas. Amet at cumque illo similique tenetur! Amet aspernatur commodi debitis dignissimos dolore dolores earum esse, harum illo impedit nulla quibusdam rem saepe, veniam voluptate! Ab eius ipsa natus veritatis.</p>
+    </main>
+{% endblock %}
