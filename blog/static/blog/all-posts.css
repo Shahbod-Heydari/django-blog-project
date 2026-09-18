@@ -29,7 +29,7 @@
 .post {
     width: 300px;
 
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(0, 0, 0, 0.65);
     border-radius: 15px;
 
     overflow: hidden;
@@ -43,7 +43,7 @@
 
 .post a {
     text-decoration: none;
-    color: inherit;
+    color: white;
 }
 
 .post img {

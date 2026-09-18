@@ -14,15 +14,17 @@
     <section id="welcome">
         <header>
             <img src="{% static 'blog/images/programmer.jpg' %}" alt="Toplearn - Author Of This blog">
-            <h2>Blog project</h2>
+            <h2>Blog Project</h2>
         </header>
-        <p>Hi, My name is Shahbod, Im a Programmer</p>
+        <p>Hi, My name is Shahbod, I'm a Programmer</p>
     </section>
 
     <section id="latest-posts">
         <h2>Latest Posts</h2>
         <ul>
-            {% include 'blog/include/post.html' %}
+            {% for post in latest_post %}
+                {% include 'blog/include/post.html' %}
+            {% endfor %}
         </ul>
     </section>
 
