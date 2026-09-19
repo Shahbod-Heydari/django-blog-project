@@ -3,6 +3,7 @@ from django.shortcuts import render
 
 # Create your views here.
 
+
 all_posts = [
     {
         'slug': 'learning-django',
@@ -71,11 +72,14 @@ all_posts = [
     }
 ]
 
+# Sort posts by publication date.
 def get_date(post):
     return post['date']
 
 def index(request):
     sorted_posts = sorted(all_posts,key = get_date)
+
+    # Select the two most recent posts for the home page.
     latest_post = sorted_posts[-2:] # use for contex arg
     return render(request, 'blog/index.html',{'latest_post':latest_post})
 
